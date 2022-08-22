@@ -6,7 +6,7 @@
     layout da mesma é encontrada um alerta é emitido.
       
 */
-//const seek = require ('./lib/cronBox')    
+const seek = require ('./lib/cronBox')    
 //const find = require('express')
 
 const target = 'https://www.instagram.com/prefriobonito/';
