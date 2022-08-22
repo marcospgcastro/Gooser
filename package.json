@@ -1,0 +1,40 @@
+{
+  "name": "gooser",
+  "version": "1.0.0",
+  "description": "Gooser monitora páginas indexadas, notificando sempre que uma atualização é encontrada.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "@marcospgcastro",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "dialog": "^0.3.1",
+    "dns": "^0.2.2",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "jimp": "^0.16.1",
+    "node-cron": "^3.0.0",
+    "node-datetime": "^2.1.2",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "puppeteer": "^13.1.2",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcospgcastro/Gooser.git"
+  },
+  "keywords": [
+    "Page",
+    "Monitor",
+    "Gooser",
+    "Stalker."
+  ],
+  "bugs": {
+    "url": "https://github.com/marcospgcastro/Gooser/issues"
+  },
+  "homepage": "https://github.com/marcospgcastro/Gooser#readme"
+}
