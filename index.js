@@ -7,9 +7,9 @@
       
 */
 
-const seek = require('./lib/cronBox'); 
+const seeker = require('./lib/cronBox'); 
 const target = 'https://trends24.in/brazil/';
 // const target = 'https://trends24.in/argentina'
 
-    seek.checkPrintSc( target, 6480, 1080, true )
-    seek.cronoTrigger( target, 6480, 1080, true )
+    seeker.checkPrintSc( target, 6480, 1080, true )
+    seeker.cronoTrigger( target, 6480, 1080, true )
