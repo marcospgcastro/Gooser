@@ -6,15 +6,10 @@
     layout da mesma é encontrada um alerta é emitido.
       
 */
-const seek = require ('./lib/cronBox')    
-//const find = require('express')
 
-const target = 'https://www.instagram.com/prefriobonito/';
-seek.cronoTrigger( target, 1920, 3240, false )                                  // cronoTrigger ( "endereço", "largura", "altura", "logica: página toda" )
+const seek = require('./lib/cronBox'); 
+const target = 'https://trends24.in/brazil/';
+// const target = 'https://trends24.in/argentina'
 
-//const app = find()
-//app.get('/', async (req, res) => {
-//    res.send('Gooser em execução! Monitorando: '+target)
-//})
-
-//app.listen(3000);
+    seek.checkPrintSc( target, 6480, 1080, true )
+    seek.cronoTrigger( target, 6480, 1080, true )
