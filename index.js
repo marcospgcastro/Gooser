@@ -7,19 +7,23 @@
       
 */
 
-const seeker = require('./lib/cronBox'); 
+const seeker = require('../Gooser/lib/cronBox'); 
 const webapp = require('express');
 const status = webapp();
+
 // Seta alvo para monitoramento - Escolha: trends para acompanhamento da corrida presidencial de 2022.
 const target = 'https://trends24.in/brazil/';
+
 // Exibe status de execução ao usuário - Esta versão do Gooser será posta em um docker container!
 status.get('/', (req, res) => {
     res.send('   Gooser está contido em um container - docker!')
 });
 
 status.listen(3000, '0.0.0.0', () => { 
+
     // Retorna ao usuário host:porta onde é exibido status de execução.
     console.log(' Gooser está "dockerizado" - Setado em http://0.0.0.0:3000')
+    
     // Executa individualmente a verificação de arquivos do diretório e cria arvore para o mesmo.
     seeker.checkPrintSc( target, 6480, 1080, true,
         (error) => { console.error(error)
