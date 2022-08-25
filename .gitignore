@@ -105,3 +105,4 @@ dist
 *.png
 *.dat
 *.log
+install.sh

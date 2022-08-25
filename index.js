@@ -19,10 +19,10 @@ status.get('/', (req, res) => {
     res.send('   Gooser está contido em um container - docker!')
 });
 
-status.listen(3000, '0.0.0.0', () => { 
+status.listen(3000, () => { 
 
     // Retorna ao usuário host:porta onde é exibido status de execução.
-    console.log(' Gooser está "dockerizado" - Setado em http://0.0.0.0:3000')
+    console.log(' Gooser está "dockerizado" - Setado em http://localhost:3000')
     
     // Executa individualmente a verificação de arquivos do diretório e cria arvore para o mesmo.
     seeker.checkPrintSc( target, 6480, 1080, true,
