@@ -7,7 +7,7 @@
       
 */
 
-const seeker = require('../Gooser/lib/cronBox'); 
+const seeker = require('./lib/cronBox'); 
 const webapp = require('express');
 const status = webapp();
 

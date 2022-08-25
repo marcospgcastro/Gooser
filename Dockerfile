@@ -4,7 +4,7 @@ FROM node:latest
 
 ## Define o local onde o app vai ficar no disco do container
 ## Pode ser o diretório que você quiser
-WORKDIR /app/Gooser
+WORKDIR /usr/app
 
 ## Copia tudo que começa com package e termina com .json para dentro da pasta /app/gooser
 COPY package*.json ./
