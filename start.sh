@@ -15,5 +15,5 @@ do
   arquivo=$(echo "uRecall Gooser $numeral.log")                                 # Define um número de série para o log
   touch "$locdir"/var/log/"$arquivo"                                            # Cria arquivo de saída de dados no doretório /var/log
   node  "$locdir"/index.js >> "$locdir"/var/log/"$arquivo"                      # Salva log de execução no arquivo criado
-  sleep 600                                                                     # Executa de forma contínua, em caso de interrupção por ausência de conexão
+  sleep 30                                                                      # Executa de forma contínua, em caso de interrupção por ausência de conexão
 done
