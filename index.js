@@ -3,7 +3,7 @@ const webapp = require('express');
 const status = webapp();
 const target = 'https://trends24.in/brazil';                                    // Seta alvo para monitoramento - Escolha: trends para acompanhamento da corrida presidencial de 2022.
 const port = 3000;                                                              // Porta dedicada a execução de Gooser
-const host = '0.0.0.0';                                                         // Host local, onde é exibido o status de funcionamento.
+const host = '192.168.0.115';                                                         // Host local, onde é exibido o status de funcionamento.
 status.get('/', (req, res) => {                                                 // Exibe status de execução ao usuário - Esta versão do Gooser será posta em um docker container!
     res.send('   Gooser está em operacional!')
 });
