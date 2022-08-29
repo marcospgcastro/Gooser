@@ -10,11 +10,6 @@ WORKDIR /app/Gooser
 COPY package*.json ./
 
 ## Executa npm install para adicionar as dependências e criar a pasta node_modules
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install python3 -y
-RUN apt-get install npm -y
-RUN apt-get install -f -y
 RUN npm install
 
 ## Copia tudo que está no diretório onde o arquivo Dockerfile está 
