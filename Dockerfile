@@ -4,12 +4,17 @@ FROM node:latest
 
 ## Define o local onde o app vai ficar no disco do container
 ## Pode ser o diretório que você quiser
-WORKDIR /app/Gooser
+WORKDIR /usr/gooser-container
 
 ## Copia tudo que começa com package e termina com .json para dentro da pasta /app/gooser
 COPY package*.json ./
 
 ## Executa npm install para adicionar as dependências e criar a pasta node_modules
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install apt-utils -y
+RUN apt-get install -f
+RUN apt-get install chromium -y
 RUN npm install
 
 ## Copia tudo que está no diretório onde o arquivo Dockerfile está 
