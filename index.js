@@ -9,7 +9,7 @@ status.use(webapp.urlencoded({ extended: true }));
 
 status.get('/status', (req, res) => {                                           // status operacional, exibe log atual em formato texto no navegador
   if(cont = reader.readdirSync('./var/log')) {                                  // vetor responsável por ler arquivos no diretório de armazenamento de Prints
-    reader.readFile('./var/log/'+cont[cont.length-1], (error, data) => {
+    reader.readFile('./var/log/'+cont[cont.length-1],'utf-8', (error, data) => {
       if (!error) {
         res.set({ 'Content-Type': 'text/plain' })
         res.send(data);
