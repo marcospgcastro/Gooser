@@ -1,2 +1,13 @@
-node_modules
+## Arquivos locais gerados por gooser-container
+*.png
+*.dat
+*.log
+## Comandos para criação de docker container
 install.sh
+## Diretórios contendo pacotes npm 
+node_modules/
+## Diretórios contendo dados pessoais
+etc/config/
+etc/target/
+var/img/
+var/log/
