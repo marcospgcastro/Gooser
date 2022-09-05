@@ -3,8 +3,13 @@ const seeker = require('./lib/pageRun');
 
 // Biblioteca npm de recursos do nodejs                                     
 const webapp = require('express');
-const reader = require ('fs');
+const reader = require('fs');
 const status = webapp();   
+
+// Contenção - MaxListenersExceededWarning: Possible EventEmitter memory leak detected.
+const EventEmitter = require('events');
+const emitter = new EventEmitter()
+emitter.setMaxListeners(50)
 
 // Exibe status de execução ao usuário
 status.use(
