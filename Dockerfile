@@ -16,6 +16,7 @@ RUN apt-get install apt-utils -y
 RUN apt-get install -f
 RUN apt-get install chromium -y
 RUN npm install
+RUN npm install -g npm@8.19.1
 
 ## Copia tudo que está no diretório onde o arquivo Dockerfile está 
 ## para dentro da pasta /usr/app do container

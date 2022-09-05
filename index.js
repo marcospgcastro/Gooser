@@ -9,7 +9,7 @@ const status = webapp();
 // Contenção - MaxListenersExceededWarning: Possible EventEmitter memory leak detected.
 const EventEmitter = require('events');
 const emitter = new EventEmitter()
-emitter.setMaxListeners(50)
+emitter.setMaxListeners(0)
 
 // Exibe status de execução ao usuário
 status.use(

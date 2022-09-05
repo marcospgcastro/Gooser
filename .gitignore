@@ -2,12 +2,13 @@
 *.png
 *.dat
 *.log
+*.tar.bz2
 ## Comandos para criação de docker container
-install.sh
+## install.sh
 ## Diretórios contendo pacotes npm 
-node_modules/
+node_modules
 ## Diretórios contendo dados pessoais
-etc/config/
-etc/target/
-var/img/
-var/log/
+## etc/config/
+## etc/target/
+## var/img/
+## var/log/
