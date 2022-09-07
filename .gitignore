@@ -7,10 +7,9 @@
 ## install.sh
 ## Diretórios contendo pacotes npm 
 node_modules
-etc
-var
 ## Diretórios contendo dados pessoais
 ## etc/config/
 ## etc/target/
 ## var/img/
 ## var/log/
+!etc/target/"uTarget linked.in 2022-09-07 marcospgcastro.dat"
