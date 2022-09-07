@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install apt-utils -y
 RUN apt-get install -f
-RUN apt-get install chromium -y
+RUN apt-get install chromium vim tree -y
 RUN npm install
 RUN npm install -g npm@8.19.1
 

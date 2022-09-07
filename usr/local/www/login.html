@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Gooser Notify</title>
+    <style>
+      body{
+        font-family:Arial, sans-serief;
+        margin: 0;
+        padding: 0;
+        background-color: #010101;
+        color: #ffffff;
+      }
+      label {
+        font-size: 18px;
+      }
+      input {
+        margin: 10;
+        border: 0;
+        padding: 0;
+        font-size: 14px;
+        width: 200px;
+      }
+      button{
+        margin: 10;
+        border: 0;
+        padding: 0;
+        width: 200px;
+        color: #565656
+      }
+      button:hover{
+        background-color: #e9e92955;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      displayBlock {
+        display: block;
+        position:relative;
+        margin-top:10%;
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <hr/>
+    <div class="displayBlock" align="center">
+      <form action="" method="get">
+        <div>
+          <label for="nickname">Usuário:</label>
+          <br/>
+          <input type="text" id="nickname" name="nickname"/>
+        </div>
+        <div>  
+          <label for="passwd">Senha:</label>
+          <br/>
+          <input type="text" id="passwd" name="passwd"/>
+        </div>  
+        <div>
+          <button>Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
