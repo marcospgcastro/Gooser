@@ -1,5 +1,8 @@
 #!bin/bash
-
+#
+#                 O script cria a arvore de diretórios
+#                necessária para execução do APP Gooser
+# 
 ## Criação de arquivo de configuração
 locdir=$(pwd)                                                                   # Define local de instalação do app Gooser
 if [ ! -e "$locdir"/etc ] ; then                                                # Condicional para verificar a existência de etc/
